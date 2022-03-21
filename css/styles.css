@@ -1,0 +1,412 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.9em;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+#header .logo {
+  margin-left: 30px;
+}
+
+#header .topMenu {
+  position: fixed;
+  right: 50px;
+}
+
+#header h1 {
+  font-size: 28px;
+}
+
+#header .topMenu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+}
+
+#pickup {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  /*=========================================
+スライダーのためのcss
+===================================*/
+  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+  /*矢印の設定*/
+  /*戻る、次へ矢印の位置*/
+  /*ドットナビゲーションの設定*/
+}
+
+#pickup h1 {
+  margin-bottom: 50px;
+}
+
+#pickup .slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+#pickup .slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+#pickup .slider .slick-slide {
+  margin: 0 10px;
+}
+
+#pickup .slick-prev,
+#pickup .slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+#pickup .slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+#pickup .slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#pickup .slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+#pickup .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#pickup .slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+#pickup .slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
+
+#feature h1 {
+  margin-bottom: 28px;
+}
+
+#feature .sneakers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#feature .sneakers li {
+  width: 27%;
+  margin: 15px 10px;
+  -webkit-box-shadow: 0 0 8px grey;
+          box-shadow: 0 0 8px grey;
+}
+
+#feature .sneakers img {
+  width: 100%;
+}
+
+#feature .sneakers .item {
+  margin-top: 15px;
+  padding: 15px 35px;
+}
+
+#feature .sneakers .title {
+  margin-bottom: 20px;
+}
+
+#feature .sneakers .text {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#feature .sneakers .date {
+  text-align: right;
+}
+
+#footer {
+  background-color: black;
+  color: #fff;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#footer h1 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 36px;
+}
+
+#footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 100px;
+  padding-bottom: 50px;
+}
+
+#footer .explan {
+  width: 45%;
+}
+
+#footer .mail {
+  width: 45%;
+}
+
+#footer .mail #name {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#footer .mail #mailaddress {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#footer .mail #message {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#footer .mail #button {
+  color: #fff;
+  background-color: black;
+  padding: 15px 80px;
+  border: 1px solid #fff;
+}
+
+#footer #copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+}
+
+.topMenu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.topMenu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  text-align: left;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  z-index: 20;
+  width: 250px;
+  padding: 60px 30px;
+}
+
+.overlay a {
+  color: #fff;
+}
+
+.overlay .pages li {
+  padding: 15px 0px;
+  border-top: 1px solid #fff;
+}
+
+.overlay .pages li:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.overlay .sns {
+  margin-top: 50px;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+.overlay li {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, transform .5s;
+  transition: opacity .5s, transform .5s, -webkit-transform .5s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.mask.show {
+  background-color: red;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.mask.show #close {
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* フェードイン用のCSS */
+.slide-bottom {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1.3s 0s ease-out;
+  transition: all 1.3s 0s ease-out;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 25px;
+  }
+  video {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #feature .sneakers ul {
+    display: block;
+  }
+  #feature .sneakers ul li {
+    width: auto;
+  }
+  #footer h1 {
+    font-size: 25px;
+  }
+  #footer .contact {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
+  #footer .explan {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  #footer .mail {
+    width: auto;
+  }
+  #footer .mail #button {
+    padding: 15px 177px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

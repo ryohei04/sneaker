@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロフィールサイト／上級編：メディアサイト </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="logo">
+      <h1>
+        <a href="./index.html"><img src="img/logo.svg" alt="Sneakers"></a>
+      </h1>
+    </div>
+    <div class="topMenu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+  <div class="overlay">
+    <nav>
+      <div id="transition">
+        <ul class="pages">
+          <li><a href="./index.html#pickup">PICKUP</a></li>
+          <li><a href="./index.html#feature">FEATURE</a></li>
+          <li><a href="mailto:address?subject=&amp;body=">CONTACT</a></li>
+        </ul>
+        <ul class="sns">
+          <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="mask">
+    <span class="material-icons" id="close">close</span>
+  </div>
+
+  <!-- 動画表示 -->
+  <div id="movie">
+    <video src="./img/video.mp4" loop autoplay muted></video>
+  </div>
+  <!-- PICK UP -->
+  <div id="pickup">
+    <h1>PICK UP</h1>
+    <div class="slideShow">
+      <ul class="slider">
+        <li><img src="./img/pickup1.jpg" alt="pickup1"></li>
+        <li><img src="./img/pickup2.jpg" alt="pickup2"></li>
+        <li><img src="./img/pickup3.jpg" alt="pickup3"></li>
+        <li><img src="./img/pickup4.jpg" alt="pickup4"></li>
+        <li><img src="./img/pickup5.jpg" alt="pickup5"></li>
+        <li><img src="./img/pickup6.jpg" alt="pickup6"></li>
+        <li><img src="./img/pickup7.jpg" alt="pickup7"></li>
+        <li><img src="./img/pickup8.jpg" alt="pickup8"></li>
+        <li><img src="./img/pickup9.jpg" alt="pickup9"></li>
+        <!--/slider-->
+      </ul>
+    </div>
+  </div>
+  <!-- FEATURE -->
+  <div id="feature">
+    <h1>FEATURE</h1>
+    <div class="sneakers">
+      <ul>
+        <li>
+          <img src="./img/feature1.jpg" alt="sneaker1" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature2.jpg" alt="sneaker2" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature3.jpg" alt="sneaker3" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature4.jpg" alt="sneaker4" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature5.jpg" alt="sneaker5" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature6.jpg" alt="sneaker6" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature7.jpg" alt="sneaker7" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature8.jpg" alt="sneaker8" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+        <li>
+          <img src="./img/feature9.jpg" alt="sneaker9" class="slide-bottom showimg">
+          <div class="item">
+            <p class="title">catgory</p>
+            <p class="text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- CONTACT -->
+  <div id="footer">
+    <h1>CONTACT</h1>
+    <div class="contact">
+      <div class="explan">
+        <p>テキストテキストテキスト</p><br><br>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p><br><br>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="mail">
+        <p><label for="name">Name：</label></p>
+        <input id="name" type="text" name="yourname">
+        <p><label for="mailaddress">Mail：</label></p>
+        <input id="mailaddress" type="text" name="youraddress">
+        <p><label for="message">Message：</label></p>
+        <input id="message" type="text" name="yourmessage">
+        <input id="button" type="button" value="SEND">
+      </div>
+    </div>
+    <p id="copyright">© Sneakers</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
